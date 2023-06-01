@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/R.jpg">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pagina de login</title>
+</head>
+<body>
+    <form id="loginform">
+
+    <div id="pai">
+
+        <div id="login">
+            <h1>Login</h1>
+            <i onclick="black()" id="icone" class="fa-solid fa-moon"></i>
+        </div>
+
+        <div class="imagemicons">
+            <a href="https://www.facebook.com/"><img src="img/facebook.png"></a>
+            <img src="img/google.png">
+            <img src="img/github.png">
+        </div>
+
+        <div class="inputs">
+            
+                <div class="label">
+                <label>Nome</label><br>
+
+                <div id="nome"> 
+                <i class="fa-solid fa-user"></i>&nbsp;&nbsp;
+                <input  type="name" required> 
+                </div>
+                <br><br>
+
+                <label >Email</label><br>
+                <div id="email">
+                <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;
+                <input type="email" required>
+                </div>
+                <br><br>
+
+                <label >Senha</label><br>
+                <div id="senha">
+                <i class="fa-solid fa-key"></i>&nbsp;&nbsp;
+                <input type="password" required>
+                </div>
+            </div>
+            </div>
+                <br><br>
+            <div class="botao">
+                <button >LOGIN</button>
+            </div>
+    </div>
+
+</form>
+
+    <div id="icone_sol">
+        <i class="fa-solid fa-bat"></i>
+    </div>
+    
+
+    <script src="login.js"></script>
+</body>
+</html>

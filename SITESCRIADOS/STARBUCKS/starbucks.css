@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.nav{
+    height: 7%;
+    width: 100%;
+    background:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-left: 15px;
+    height: 90px;
+    width: 100px;
+}
+
+.menu{
+    display: flex;
+    width: 90%;
+    justify-content: end;
+    gap: 50px;
+    margin-right: 40px ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menu p{
+    margin-right: 10px;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.menu p:hover{
+    text-decoration: underline rgb(122, 3, 176);
+    transform: scale(1.5);
+    transition: 0.4s;
+}
+
+.hiden1{
+    background-image: url( '');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+    height: 627px;
+    width: 100%;
+    overflow:hidden;
+}
+.starbucks{
+    position: absolute;
+    right: -480px;
+    bottom: -360px;
+    border-radius: 50% 2% 50% 0;
+    height: 950px;
+    width: 1100px;
+    background: rgb(3, 130, 85);
+    z-index: 2;
+    transform: rotate(-2deg);
+}
+
+.img{
+    transform: rotate(-2deg);
+    height: 550px;
+    width: 350px;
+    position: absolute;
+    z-index: 2;
+    left: 58%;
+    bottom: 10%;
+    animation: float 3s ease-in-out infinite;
+    transition: 0.4s;
+}
+
+@keyframes float{
+    0%{
+        transition: 0.4s;
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-30px);
+        transition: 0.4s;
+    }
+    100%{
+        transition: 0.4s;
+        transform: translateY(0);
+}
+}
+
+
+
+.escrita{
+    margin-left: 30px;
+    margin-top: 100px;
+}
+
+.escrita h3{
+    font-size: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.escrita p{
+    width: 500px;
+    font-size: 20px;
+}
+
+.botao{
+    transition: 0.3s;
+    margin-top: 20px;
+    height: 35px;
+    width: 95px;
+    border: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 19px;
+    background: rgb(3, 130, 85);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: brilho 5s ease-in-out infinite;
+}
+
+@keyframes brilho{
+    0%{
+        transition: 0.2s;
+        height: 35px;
+        width: 95px;
+        transform: scale(1);
+    }
+    25%{
+        transition: 0.2s;
+        box-shadow: 0px 0px 60px 0px rgb(78, 238, 78) ;
+        transform: scale(1.1);
+        /* color: #B1d017; */
+    }
+    50%{
+        transition: 0.2s;
+        box-shadow: 0px 0px 60px 0px rgb(78, 238, 78) ;
+        transform: scale(1.2);
+        /* color: #B1d017; */
+    
+    }
+    100%{
+        transition: 0.2s;
+        height: 35px;
+        width: 95px;
+        /* color: #B1d017; */
+    }
+}
+
+.icones{
+    position: absolute;
+    font-size: 30px;
+    z-index: 3;
+    right: 10px;
+    bottom: 40%;
+}
+
+.icones i{
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.copos{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    z-index: 4;
+    height: 150px;
+    width: 250px;
+    bottom: -60px;
+    left: 42%;
+}
+
+.copos img{
+    height: 80px;
+    width: 50px;
+}
+
+.img1{
+    transform: rotate(-14deg);
+}
+.img2{
+    transform: rotate(14deg);
+}
+
+.img3{
+    transform: rotate(25deg);
+}
+
+@media (max-width: 1200px){
+    .starbucks{
+        right: -600px;
+    }
+    .img{
+        height: 480px;
+        left: 65%;
+    }
+}
+
+@media (max-width: 1060px){
+    .starbucks{
+        right: -650px;
+    }
+    .img{
+        height: 440px;
+        width: 300px;
+        left: 65%;
+    }
+
+    .escrita h3{
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 960px){
+    .starbucks{
+        right: -680px;
+        height: 900px;
+        width: 1050px;
+    }
+    .img{
+        height: 450px;
+        width: 300px;
+        left: 65%;
+        bottom: 15%;
+    }
+
+    .escrita{
+        margin-top: 150px;
+    }
+
+    .escrita h3{
+        font-size: 60px;
+    }
+
+}
+
+@media (max-width: 840px){
+    .starbucks{
+        right: -680px;
+        height: 900px;
+        width: 1050px;
+    }
+    .img{
+        height: 420px;
+        width: 270px;
+        left: 65%;
+        bottom: 15%;
+    }
+
+    .escrita{
+        height: 450px;
+        width: 400px;
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .escrita h3{
+        font-size: 50px;
+        width: 110%;
+    }
+
+    .escrita p{
+        font-size: 26px;
+        width: 44vh;
+    }
+
+    .botao{
+        margin-top: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 660px){
+
+        .nav{
+            width: 100%;
+        }
+    
+        .logo{
+            width: 15%;
+        }
+    
+        .menu{
+            width: 80%;
+            font-size: 12px;
+            gap: 2%;
+        }
+        .starbucks{
+            transform: rotateX('0');
+            top: 590px;
+            right: 0;
+            height: 150px;
+            width: 1150px;
+            border-radius: 0%;
+        }
+        .img{
+            height: 300px;
+            width: 140px;
+            left: 55%;
+            bottom: 25%;
+            animation: none;
+        }
+    
+        .escrita{
+            margin-left: 10px;
+            height: 450px;
+            width: 240px;
+            margin-top: 150px;
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid red; */
+        }
+    
+        .escrita h3{
+            font-size: 30px;
+            width: 110%;
+        }
+    
+        .escrita p{
+            
+            /* border: 1px solid blue; */
+            font-size: 22px;
+            width: 25vh;
+        }
+    
+        .botao{
+            margin-top: 20px;
+            height: 50px;
+        }
+    
+        .copos{
+            gap: 30px;
+            left: 34%;
+            bottom: -3%;
+            animation: float 9s ease-in-out infinite;
+        }
+    
+        .copos img{
+            height: 120px;
+            width: 60px;
+        }
+    
+        .icones{
+            margin-right: 5px;
+        }
+    }
+    
+
+@media (max-width: 415px){
+
+    .nav{
+        width: 100%;
+    }
+
+    .logo{
+        width: 15%;
+    }
+
+    .menu{
+        width: 80%;
+        font-size: 12px;
+        gap: 2%;
+    }
+    .starbucks{
+        transform: rotateX('0');
+        top: 590px;
+        right: 0;
+        height: 150px;
+        width: 1150px;
+        border-radius: 0%;
+    }
+    .img{
+        height: 300px;
+        width: 140px;
+        left: 55%;
+        bottom: 25%;
+        animation: none;
+    }
+
+    .escrita{
+        margin-left: 10px;
+        height: 450px;
+        width: 240px;
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid red; */
+    }
+
+    .escrita h3{
+        font-size: 30px;
+        width: 110%;
+    }
+
+    .escrita p{
+        
+        /* border: 1px solid blue; */
+        font-size: 22px;
+        width: 25vh;
+    }
+
+    .botao{
+        margin-top: 20px;
+        height: 50px;
+    }
+
+    .copos{
+        gap: 30px;
+        left: 34%;
+        bottom: -3%;
+        animation: float 9s ease-in-out infinite;
+    }
+
+    .copos img{
+        height: 120px;
+        width: 60px;
+    }
+
+    .icones{
+        margin-right: 5px;
+    }
+}
+
